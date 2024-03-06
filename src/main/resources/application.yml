@@ -1,2 +1,4 @@
 example:
   duration: PT1H
+  inner:
+    duration: PT2H

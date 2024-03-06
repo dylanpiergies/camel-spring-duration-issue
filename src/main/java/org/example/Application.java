@@ -27,5 +27,6 @@ public class Application implements CommandLineRunner {
     @Override
     public void run(String... args) {
         LOGGER.info("Configured duration is {}", confProps.getDuration());
+        LOGGER.info("Configured inner duration is {}", confProps.getInner().getDuration());
     }
 }
