@@ -7,7 +7,7 @@ import java.time.Duration;
 @ConfigurationProperties("example")
 public class ConfProps {
     private Duration duration;
-    private Inner inner;
+    private Inner inner = new Inner();
 
     public Duration getDuration() {
         return duration;

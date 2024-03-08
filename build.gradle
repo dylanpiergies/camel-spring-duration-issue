@@ -13,14 +13,11 @@ dependencies {
     implementation platform(SpringBootPlugin.BOM_COORDINATES)
 
     implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.apache.camel.springboot:camel-azure-servicebus-starter:4.4.0'
 }
 
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
     }
-}
-
-tasks.named('test') {
-    useJUnitPlatform()
 }
